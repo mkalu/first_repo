@@ -1,41 +1,49 @@
 <!DOCTYPE html>
 <head>
         <title> Canal Crud </title>
-        <style>
-        body {
+<style>
+        header {
                 text-align: center;
+        }
+        body {
                 font-family: Helvetica;
+                width: 500px;
+                padding:20px;
+                margin: 0 auto;
         }
 
-        .bar li {
-                display: inline-block;
-                padding: 6px;
-                background: green;
-                color: white;
-                text-align: center;
+        #bar {
+                background: rgba(0, 140, 0, .85); 
         }
-        .bar a {
+        .links {
+                display: inline-block;
+                color: white;
+                padding: 6px;
+
+        }
+        .links a {
                 color: white;
         }
         img {
                 border: 5px solid black;
-                        }
+        }
 
-        </style>
+</style>
 </head>
 <body>
-
+<header>
         <h1>Canal Crud</h1>
 
-        <ul class= "bar"> 
-                <li><a href="index.html">Home</a></li>
-                <li><a href="history.html">History</a></li>
-                <li><a href="explore.html">Explore</a></li>
-                <li>What's On</li>
-                <li>About</li>
-                <li>Contact</li>
+        <ul id= "bar"> 
+                <li class="links"><a href="index.html">Home</a></li>
+                <li class="links"><a href="history.html">History</a></li>
+                <li class="links"><a href="explore.html">Explore</a></li>
+                <li class="links">What's On</li>
+                <li class="links">About</li>
+                <li class="links">Contact</li>
         </ul>
 
+</header>
         <h3 id="title">Canals are great</h3>
 
         <img src="canal.jpg" />

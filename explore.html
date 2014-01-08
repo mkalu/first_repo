@@ -4,40 +4,53 @@
         <title> Explore London's Canals</title>
 
         <style>
-        body {
+       header {
                 text-align: center;
+                background: url("http://www.edinburgh.org/images/articles/3750553/union-canal-aqueduct");
+                background-size: cover;
+                height: 250px;
+        }
+        h1 {
+                padding: 6px 0px 0px 0px;
+                color: white;
+        }
+        body {
                 font-family: Helvetica;
+                max-width: 520px;
+                padding:20px;
+                margin: 0 auto;
         }
 
-        .bar li {
-                display: inline-block;
-                padding: 6px;
-                background: green;
-                color: white;
-                text-align: center;
+        #bar {
+                background: rgba(154, 205, 50, .7); 
         }
-        .bar a {
+        .links {
+                display: inline-block;
+                color: white;
+                padding: 6px;
+        }
+        .links a {
                 color: white;
         }
         img {
                 border: 5px solid black;
                         }
-
         </style>
 </head>
 
 <body>
+        <header>
                 <h1>Canal Crud</h1>
-
-        <ul class= "bar"> 
-                <li><a href="index.html">Home</a></li>
-                <li><a href="history.html">History</a></li>
-                <li><a href="explore.html">Explore</a></li>
-                <li>What's On</li>
-                <li>About</li>
-                <li>Contact</li>
+        <ul id= "bar"> 
+                <li class="links"><a href="index.html">Home</a></li>
+                <li class="links"><a href="history.html">History</a></li>
+                <li class="links"><a href="explore.html">Explore</a></li>
+                <li class="links">What's On</li>
+                <li class="links">About</li>
+                <li class="links">Contact</li>
         </ul>
 
+</header>
         <p>In my opinion the canals are the best bits of London</p>
 
         <img src="http://www.canalmuseum.org.uk/history/londonmap.gif"/>
