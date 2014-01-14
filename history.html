@@ -1,54 +1,140 @@
 <!DOCTYPE html>
-<html>
 <head>
-	<title>Canal History</title>
-	<style>
+        <title> Canal Crud </title>
+        <link href='dist/css/bootstrap.css' rel='stylesheet'>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+        
+        body {
+            margin: 0 auto;
+        }
 
-		body {
-		text-align: center;
-		font-family: Helvetica;
-	}
-		.bar li {
-			display: inline-block;
-			padding: 6px;
-			background: green;
-			color: white;
-			text-align: center;
-	}
-		.bar a {
-		color: white;
-	}
-	</style>
+        .behind_all {
+            min-height: 600px;
+            background: url("old_canal.jpg");
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+        }
+       
+        .black_bg {
+            background: rgba(0, 0, 0, 0.6);
+            margin: 10px 0 20px 0;
+            height: 900px;
+        }
+
+        #title a {
+                color: black;
+                text-decoration: none;
+        }
+       
+        nav {
+                background: rgba(0, 140, 0, .75);
+        }
+       
+        .links {
+                display: inline-block;
+                color: white;
+                padding: 10px;
+        }
+       
+        .links a {
+                color: white;
+                text-decoration: none;
+        }
+       
+        #first_img {
+                background: url("#");
+                background-size: cover;
+                width: 780px; 
+                height: 440px;
+                margin: 30px 0 40px 0;
+                background-position: center;
+        }
+
+        .footer {
+                background: rgba(0, 140, 0, .75);
+                color: white;
+                height: 40px;
+                text-align: center;
+                padding: 10px 0 0 0;
+                margin-bottom: 15px;
+        }
+
+</style>
 </head>
+
+        <!-- for style: #words {
+              color: rgba(255, 255, 255, 1);
+              background: rgba(0, 0, 0, .75);
+              padding: 10px;
+              text-align: justify;
+              line-height: 28px;
+              position: absolute;
+              bottom: 0;
+              margin: 0 0 0 -15px;
+              width: 780px;
+        } -->
+
 <body>
+<div class="behind_all">
+<div class="container">
 
-	<h1>Canal Crud</h1>
+        <div class="row">
+            <div class='col-sm-.5'> </div>
 
-	<ul class= "bar"> 
-		<li><a href="index.html">Home</a></li>
-		<li><a href="history.html">History</a></li>
-		<li><a href="explore.html">Explore</a></li>
-		<li>What's On</li>
-		<li>About</li>
-		<li>Contact</li>
-	</ul>
+            <div class='col-sm-10.5'>
+                <h1 id="title"><a href="index.html">Canal Crud</a></h1>
+                <nav>
+                    <ul id= "bar"> 
+                        <li class="links"><a href="index.html">Home</a></li>
+                        <li class="links"><a href="history.html">History</a></li>
+                        <li class="links"><a href="explore.html">Explore</a></li>
+                        <!--<ul>
+                               <li><a href="#">Regent's Canal</a></li>
+                                <li><a href="#">Lee Navigation</a></li>
+                                <li><a href="#">Limehouse Cut</a></li>
+                                <li><a href="#">Hertford Union</a></li>
+                                <li><a href="#">Paddington Branch</a></li>
+                            </ul> -->
+                        <li class="links"><a href="whatson.html">What's On</a></li>
+                        <li class="links"><a href="whycanals.html">Why Canals</a></li>
+                        <li class="links"><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
 
-	<h3>Loads of people live on the canals</h3>
+            <div class='col-sm-.5'> </div>
+          </div>
 
-	<p>In boats of all shapes and sizes</p>
+    <div class="black_bg">
+            <h2 style="text-align: right; color: white; padding: 10px;">There's an interesting history.</h2>
 
-	<table>
-		<thead>
+        <div class="row">
+                <div class='col-sm-2'> </div>
+                <div class='col-sm-8 img-responsive' id="first_img">
+                </div>
+                <div class='col-sm-2'> </div>
+        </div>
 
-		</thead>
-		<tbody>
-			<tr>
-				<td><img src="small_boat.jpg" /></td>
-				<td><img src="large_boat.jpg" /></td>
-			</tr>
-		</tbody>
-	</table>	
 
+    </div>
+
+        <div class="row">
+                <div class='col-sm-.5'> </div>
+                <div class='col-sm-4 footer'>
+                        Who Are We
+                </div>
+                <div class='col-sm-4 footer'>
+                        What We Do
+                </div>
+                <div class='col-sm-4 footer'>
+                        Get In Touch
+                </div>
+                <div class='col-sm-.5'></div>
+        </div>
+
+</div>
+</div>
 </body>
-
 </html>

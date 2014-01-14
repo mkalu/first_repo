@@ -1,56 +1,125 @@
 <!DOCTYPE html>
 <head>
         <title> Canal Crud </title>
+        <link href='dist/css/bootstrap.css' rel='stylesheet'>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
-        header {
-                text-align: center;
-        }
+        
         body {
-                font-family: Helvetica;
-                width: 500px;
-                padding:20px;
-                margin: 0 auto;
+            margin: 0 auto;
         }
-
-        #bar {
-                background: rgba(0, 140, 0, .85); 
+        #title a {
+                color: black;
+                text-decoration: none;
+        }
+        nav {
+                background: rgba(0, 140, 0, .75);
         }
         .links {
                 display: inline-block;
                 color: white;
-                padding: 6px;
-
+                padding: 10px;
         }
         .links a {
                 color: white;
+                text-decoration: none;
         }
-        img {
-                border: 5px solid black;
+        #first_img {
+                background: url("#");
+                background-size: cover;
+                width: 780px; 
+                height: 440px;
+                margin: 30px 0 40px 0;
+                background-position: center;
         }
+        #words {
+                color: rgba(255, 255, 255, 1);
+                text-align: center;
+                margin: 0;
+        }
+        .footer {
+                background: rgba(0, 140, 0, .75);
+                color: white;
+                height: 40px;
+                text-align: center;
+                padding: 10px 0 0 0;
+                margin-bottom: 15px;
+        }
+        .behind_all {
+            min-height: 600px;
+            background: url("wick_canal.jpg");
+            background-size: cover;
+            background-attachment: fixed;
+                            background-position: center;
 
+        }
+        .white_bg {
+            background: rgba(0, 0, 0, 0.6);
+            margin: 10px 0 20px 0;
+            height: 900px;
+        }
 </style>
 </head>
+
 <body>
-<header>
-        <h1>Canal Crud</h1>
+<div class="behind_all img-responsive">
+<div class="container">
 
-        <ul id= "bar"> 
-                <li class="links"><a href="index.html">Home</a></li>
-                <li class="links"><a href="history.html">History</a></li>
-                <li class="links"><a href="explore.html">Explore</a></li>
-                <li class="links">What's On</li>
-                <li class="links">About</li>
-                <li class="links">Contact</li>
-        </ul>
+        <div class="row">
+            <div class='col-sm-.5'> </div>
 
-</header>
-        <h3 id="title">Canals are great</h3>
+            <div class='col-sm-10.5'>
+                <h1 id="title"><a href="index.html">Canal Crud</a></h1>
+                <nav>
+                    <ul id= "bar"> 
+                        <li class="links"><a href="index.html">Home</a></li>
+                        <li class="links"><a href="history.html">History</a></li>
+                        <li class="links"><a href="explore.html">Explore</a></li>
+                        <!--<ul>
+                               <li><a href="#">Regent's Canal</a></li>
+                                <li><a href="#">Lee Navigation</a></li>
+                                <li><a href="#">Limehouse Cut</a></li>
+                                <li><a href="#">Hertford Union</a></li>
+                                <li><a href="#">Paddington Branch</a></li>
+                            </ul> -->
+                        <li class="links"><a href="whatson.html">What's On</a></li>
+                        <li class="links"><a href="whycanals.html">Why Canals</a></li>
+                        <li class="links"><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
 
-        <img src="canal.jpg" />
+            <div class='col-sm-.5'> </div>
+          </div>
 
-        <p>even in the winter</p>
+    <div class="white_bg">
 
-        <img src="canal_winter.jpg" />
+        <div class="row">
+                <div class='col-sm-2'> </div>
+                <div class='col-sm-8 img-responsive' id="first_img">
+                    <h1 id="words">The Canals might just be the best bit of London. Seriously.</h1>
+                </div>
+                <div class='col-sm-2'> </div>
+        </div>
 
+
+    </div>
+
+        <div class="row">
+                <div class='col-sm-.5'> </div>
+                <div class='col-sm-4 footer'>
+                        Who Are We
+                </div>
+                <div class='col-sm-4 footer'>
+                        What We Do
+                </div>
+                <div class='col-sm-4 footer'>
+                        Get In Touch
+                </div>
+                <div class='col-sm-.5'></div>
+        </div>
+
+</div>
+</div>
 </body>
 </html>
