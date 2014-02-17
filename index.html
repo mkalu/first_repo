@@ -32,8 +32,8 @@
                 margin: 30px 0 40px 0;
                 background-position: center;
         }
-        #words {
-                color: rgba(255, 255, 255, 1);
+        .words {
+                color: rgba( 0, 0, 0, 1);
                 text-align: center;
                 margin: 0;
         }
@@ -54,9 +54,22 @@
 
         }
         .white_bg {
-            background: rgba(0, 0, 0, 0.6);
+            background: rgba(255, 255, 255, .9);
             margin: 10px 0 20px 0;
-            height: 900px;
+            height: 2000px;
+        }
+        #youtube {
+            margin: 50px 0 0 50px;
+        }
+        .youtube1 {
+            margin: 50px 0 0 150px;
+        }
+        span {
+            font-size: 12px;
+            color: black;
+        }
+        #top_line {
+            margin-top: 40px;
         }
 </style>
 
@@ -70,7 +83,7 @@
             <div class='col-sm-.5'> </div>
 
             <div class='col-sm-10.5'>
-                <h1 id="title"><a href="index.html">Canal Crud</a></h1>
+                <h1 id="title"><a href="index.html">Canal Crud</a><span> : A loving look into the past and present of London's Canals</span></h1>
                 <nav>
                     <ul id= "bar"> 
                         <li class="links"><a href="index.html">Home</a></li>
@@ -95,14 +108,32 @@
     <div class="white_bg">
 
         <div class="row">
-                <div class='col-sm-2'> </div>
-                <div class='col-sm-8 img-responsive' id="first_img">
-                    <h1 id="words">The Canals might just be the best bit of London. Seriously.</h1>
+                <div class='col-sm-1'> </div>
+                <div class='col-sm-10'>
+                    <h1 class="words" id="top_line">The Canals might just be the best bit of London... </h1>
+                    <h2 class="words">and I don't think I'm the only one of this opinion:</h2>
+                    </br></br>
+                    <h3 class="words"><a href="http://benincity.tumblr.com/">Benin City's</a> My Love: a beautiful song set canal-side #canallove</h3>
+                    <iframe id="youtube" width="853" height="480" src="https://www.youtube-nocookie.com/embed/wDgllYQuzw4?rel=0" frameborder="0" allowfullscreen></iframe>
                 </div>
-                <div class='col-sm-2'> </div>
+                <div class='col-sm-1'> </div>
         </div>
-
-
+                <div class="row">
+                <div class='col-sm-1'> </div>
+                <div class='col-sm-10'>
+                    </br><h3 class="words">Whatever you thought of <a href="https://www.facebook.com/pages/Canalival/493784647323982">Canalival</a>, you can't deny the #canalsidevibe</h3>
+                    <iframe class="youtube1"width="640" height="480" src="https://www.youtube-nocookie.com/embed/A0MNRhxlH9M?rel=0" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class='col-sm-1'> </div>
+        </div>
+                <div class="row">
+                <div class='col-sm-1'> </div>
+                <div class='col-sm-10'>
+                    </br><h3 class="words"><a href="http://www.thetroublenotes.com/">The Trouble Notes</a> playing on <a href="http://www.themusicboat.co.uk/">The Music Boat</a> #canalmusicisneverbanalmusic</h3>
+                    <iframe class="youtube1" width="640" height="480" src="https://www.youtube-nocookie.com/embed/510qTiGmqoY?rel=0" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class='col-sm-1'> </div>
+        </div>
     </div>
 
         <div class="row">
